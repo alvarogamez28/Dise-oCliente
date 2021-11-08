@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        
+        var sueldoH = 0;
+        var sueldoM = 0;
+        var totalH = 0;
+        var totalM = 0;
+        var contadorH = 0;
+        var contadorM = 0;
+        do {
+            var sexo = prompt("Introduce H (hombres) o M (Mujer), * en caso de salir del programa: ");
+            if(sexo == "*"){
+                break;
+            }
+            sueldo = parseInt(prompt("Introduzca su sueldo en euros: "));
+            if(sexo=="H"){
+                totalH += sueldo;
+                contadorH++;
+            }
+            else if(sexo =="M")
+                totalM += sueldo;
+                contadorM ++;
+        } while (sexo != "*");
+
+        document.write("La media de sueldo de los Hombres es: ", totalH / contadorH);
+        document.write("<br>");
+        document.write("La media de sueldo de las Mujeres es: ", totalM / contadorM);
+    </script>
+</body>
+</html>

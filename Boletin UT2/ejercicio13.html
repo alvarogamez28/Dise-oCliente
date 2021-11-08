@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+    año = parseInt(prompt("Introduce el año de nacimiento"));
+    mes = parseInt(prompt("Introduce el mes de nacimiento"));
+    dia = parseInt(prompt("Introduce el dia de nacimiento"));
+
+    sumFecha = año+mes+dia;
+    sum=0;
+    do {
+        if (sumFecha==0) {
+            sumFecha=sum;
+            sum=0;
+        }
+        sum+=sumFecha % 10;
+        sumFecha=parseInt(sumFecha/10);
+    } while (sumFecha>=1 || sum>9);
+     alert (sum);
+
+    </script>
+</body>
+</html>

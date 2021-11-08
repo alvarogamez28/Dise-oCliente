@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+    var num = parseInt(prompt("¿Cuantas fechas quieres poner?"));
+    var fecha = prompt("Introduce fecha ","dd,mm,aaaa");
+    fecha = fecha.split("/");
+    fecha = new Date (fecha [2], (fecha[1]-1), fecha[0]);
+    fecha = new Date().getTime();
+
+    var fechaMayor = fecha;
+
+    for (let i = 1; i < num; i++) {
+        
+        fecha = prompt("Introduce fecha ","dd,mm,aaaa");
+        fecha = fecha.split("/");
+        fecha = new Date().getTime();
+        fecha = new Date (fecha [2], (fecha[1]-1), fecha[0]);
+
+        if (fechaMayor<fecha){
+            fechaMayor = fecha;
+        }
+    }
+    var fechaOriginal = new Date(fechaMayor);
+    document.write(fechaMayor.toLocaleDateString());
+
+    </script>
+</body>
+</html>

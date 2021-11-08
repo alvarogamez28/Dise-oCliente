@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    var ventana;
+    function abrir(){
+        if (ventana==null) {
+            ventana = window.open("","","scrollbars=1,height=2,width=2");
+            for (let i in window.navigator) {                
+                ventana.document.write (i + ": " + ventana.navigator[i] + "<br>");             
+            }    
+        }
+        
+    }
+        
+    </script>
+</head>
+<body>
+    <a href="#" onclick="abrir()">Abrir</a>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+    var cont= -1;
+    var nombresC=0;
+    var nombresÑ=0;
+    while (nombres != "ultimo") {
+
+        var nombres = prompt("Introduce tu nombre: ");
+        cont++;
+
+        if (nombres.includes("c")) {
+            nombresC++;
+        }else if (nombres.includes("ñ")){
+            nombresÑ++;
+        }
+        
+        
+    }
+    document.write("Has introducido " + cont + " nombres");
+    document.write("<br>");
+    document.write(nombresC + " empieza por C");
+    document.write("<br>");
+    document.write(nombresÑ + " empieza por Ñ");
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var hora = prompt("Dime una hora: ");
+        hora = hora.replace(":", "");
+        hora = parseInt(hora);
+        if (isNaN(hora))
+        {
+            alert("Error, debes de introducir una hora");
+        }
+        else if (730 <= hora && hora <= 1400){
+            document.write("Buenos días");
+        }else if (1401 <= hora && hora <= 2030){
+            document.write("Buenas tardes");
+        }else if ((2031 <= hora <= 2359) || (0000 <= hora <= 729)){
+            document.write("Buenas noches");
+        }
+       
+        
+            
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var str = prompt ("Introduce una cadena de caracteres");
+        var vecesRepetido=0;
+        var letraRepetida='';
+        function letraduplicada(str){
+            for(var i = 0; i < str.length; i++){
+                var re = new RegExp("[^"+ str[i] +"]","g");
+                var repetido=str.replace(re, "");
+                
+                if(repetido.length >= vecesRepetido){
+                    vecesRepetido=repetido.length;
+                    letraRepetida=repetido[0];
+                }
+            }
+            return letraRepetida;
+        }
+        document.write ("La letra mas repetida es: ", letraduplicada(str));
+    </script>
+</body>
+</html>

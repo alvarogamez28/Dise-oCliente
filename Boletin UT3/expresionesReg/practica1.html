@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+    var correo = prompt("Introduce un correo electrónico");
+    var validaLetras = /\w{3,}/;
+    var validaCaracter = /@+/;
+    var validaPunto = /\.+/;
+
+    var nombre = correo.substr(0,correo.indexOf('@'));
+    var arroba = correo.indexOf('@');
+
+
+    while (!validaLetras.test(nombre)) {
+         correo = document.write("El nombre tiene que tener minimo 3 caracteres")
+    }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj</title>
+    <script type="text/javascript">
+    function ver_hora(){
+        var miHora = new Date();
+        var horas = miHora.getHours().toString();
+        var minutos = miHora.getMinutes().toString();
+        if (minutos.length==1) minutos="0" + minutos;        
+        var segundos = miHora.getSeconds().toString();
+        if (segundos.length==1) segundos="0" + segundos; 
+        var reloj = horas + " : " + minutos + " : " + segundos;
+        document.title=reloj;
+    }
+    function parar() {
+    clearInterval(r,500);
+    }
+    </script>
+</head>
+<body>
+
+    <script>
+        var r = setInterval("ver_hora()",500);
+        var parar = setTimeout(parar,5000);
+    </script>
+</body>
+</html>

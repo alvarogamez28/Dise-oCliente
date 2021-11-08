@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+    fechaActual= Date.now();
+    var fecha = prompt("Introduce una fecha: ", "dd/mm/aaaa"); 
+    fecha = fecha.split("/");
+    fecha = new Date(fecha[2],(fecha[1]-1),fecha[0])
+    
+    if (fecha.getTime()< fechaActual) {
+        alert("La fecha introducida es anterior a la actual")        
+    }else{
+        alert("La fecha introducida es posterior a la actual")
+    }
+
+
+
+
+
+
+    /*año = parseInt(prompt("Introduce el año de nacimiento"));
+    mes = parseInt(prompt("Introduce el mes de nacimiento"));
+    dia = parseInt(prompt("Introduce el dia de nacimiento"));
+
+    sumFecha = año+mes+dia;
+    sum=0;
+    do {
+        if (sumFecha==0) {
+            sumFecha=sum;
+            sum=0;
+        }
+        sum+=sumFecha % 10;
+        sumFecha=parseInt(sumFecha/10);
+    } while (sumFecha>=1 || sum>9);
+     alert (sum);
+
+     var fechaAhora= Date.now();*/
+
+    </script>
+</body>
+</html>

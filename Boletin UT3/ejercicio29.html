@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    var ventana;
+    function abrir(){
+        if (ventana==null) {
+            ventana = window.open("","","scrollbars=1,height=2,width=2")
+            ventana.document.write("el ojo es la ventana de tu alma");
+            
+        }
+    }
+    function cerrar(){
+        ventana.close();
+        ventana=null;
+    }
+        
+    </script>
+</head>
+<body>
+	<a href="#" onclick="abrir()">Abrir</a>
+    <a href="#" onclick="cerrar()">Cerrar</a>
+</body>
+</html>

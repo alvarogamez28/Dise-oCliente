@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="furbo"></title>
+    <script type="text/javascript">
+    var position = 0;
+        var texto = "¡¡Sólo quedan 20 días de ofertas!!";
+        setInterval(mostrar,150);
+        function mostrar(){
+            position++;
+            if(position>=texto.length){
+                position=0;
+            }
+            window.document.title = texto.substring(position)+" "+texto+" "+texto;
+        }
+    </script>
+</head>
+<body onLoad="mostrar()">
+    
+</body>
+</html>

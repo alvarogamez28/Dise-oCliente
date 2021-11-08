@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+    var var1= prompt("Introduce el numero: ");
+    var var2= prompt("Introduce el numero: ");
+    var redondeoSuperior = Math.ceil(var1);
+    var redondeoInferior = Math.floor(var1);
+    var redondeoCercano = Math.round(var1);
+    var maxNumeros = Math.max(var1,var2);
+    var minNumeros = Math.min(var1,var2);
+    var numElevado = Math.pow(var1,var2);
+    var raizCuadrada = Math.sqrt(var1);
+    
+    var menu = window.prompt("Menú de opciones \n 1. Redondeo a su inmediato superior de un número \n 2. Redondeo a su inmediato inferior de un número \n 3. Redondeo al número más cercano \n 4. Cálculo del número máximo entre dos dados \n 5. Cálculo del número mínimo entre dos dados \n 6. Cálculo de un número elevado a otro \n 7. Cálculo de la raíz cuadrada de un número")
+    
+    switch (menu) {
+        case "1": document.write ("El redondeo inmediato superior de " , var1 , " es " , redondeoSuperior)
+            break;
+        case "2": document.write ("El redondeo inmediato infeior de " , var1 , " es " , redondeoInferior)
+            break;
+        case "3": document.write ("El redondeo al numero más cercano de " , var1 , " es " , redondeoCercano)
+            break;
+        case "4": document.write ("El cálculo del número máximo entre dos dados  de " , var1 , " y " , var2 , " es " , maxNumeros)
+            break;
+        case "5": document.write ("El cálculo del número min entre dos dados  de " , var1 , " y " , var2 , " es " , minNumeros)
+            break;
+        case "6": document.write ("El cálculo del número " , var1 , " elevado a " , var2 , " es " , numElevado)
+            break;
+        case "7": document.write ("La raiz cuadrada de  " , var1 , " es " , raizCuadrada)
+            break;
+    }
+    </script>
+</body>
+</html>

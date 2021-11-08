@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var fecha1 = prompt("Introduce una fecha: ", "dd/mm/aaaa");   
+        var fecha2 = prompt("Introduce una fecha: ", "dd/mm/aaaa");
+        var fecha1 = Date.parse(fecha1); 
+        var fecha2 = Date.parse(fecha2);
+        if (fecha1<fecha2) {
+            document.write("La primera fecha es mas vieja");
+        } else {
+            document.write("La segunda fecha es mas vieja");
+        }
+        
+    </script>
+</body>
+</html>
