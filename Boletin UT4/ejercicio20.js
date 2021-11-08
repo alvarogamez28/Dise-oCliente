@@ -1,12 +1,17 @@
-var valores = new Array ();
+var array = new Array ();
+var arrayBidimensional = new Array();
 
 do {
-    datos = prompt("Introduce nombre, apellidos, DNI y fecha de nacimiento");
-    datos=datos.split(",");
-    valores.push(datos);
+    var datos = prompt("Introduce nombre, apellidos, DNI y fecha de nacimiento");
+    if (!datos==""){
+        array=datos.split(",");
+        arrayBidimensional.push(array);
+    }
+    
+    
 } while (datos!="");
 
 
-document.write(valores);
+document.write(arrayBidimensional);
 
 
