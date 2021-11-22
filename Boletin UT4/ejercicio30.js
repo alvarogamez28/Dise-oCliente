@@ -1,26 +1,27 @@
-var misNotas = new Map();
-misNotas.set("DWS",10);
-misNotas.set("DWC",9);
-misNotas.set("Despliege",8);
-misNotas.set("DIW",6);
+notas1 = new Map();
+notas2 = new Map();
 
-var arrayAlumnos = new Array();
-var alumno1 = new Alumno("Álvaro", "Gámez", "47514591H", "28/10/1998", misNotas);
-var alumno2 = new Alumno("Pepe", "Leon", "1114591H", "28/10/2004", misNotas);
+notas1.set("DWS",5.3);
+notas1.set("DWC",3.2);
+notas1.set("DIW",6.4);
+notas1.set("DAW",8.6);
+notas1.set("EIE",7.7);
 
-var arrayAlumnos=[alumno1,alumno2];
+var alumno1 = new Alumno("Alvaro","Martin","23423g","25-08-2000","2º DAW", notas1);
 
-var aula = new Aula(arrayAlumnos);
+notas2.set("DWS",5.3);
+notas2.set("DWC", 6.73);
+notas2.set("DIW",3.3212);
+notas2.set("DAW",9.58);
+notas2.set("EIE",4.345);
 
+var alumno2 = new Alumno("Ruben","Castellano","36847f","10-12-1993","2º DAW", notas2);
 
+var alumnos = [alumno1,alumno2];
+var aula = new Aula(alumnos);
 
+// aula.imprimeAlumnos();
+var encontrado = aula.buscarAlumno("23423g");
 
-
-
-for (let valor of arrayAlumnos){
-    valor.info();
-}
-
-
-var result = aula.buscaDni(dni);
-result.info();
+console.log(aula.ordenarPorNota("23423g"));
+console.log(aula.ordenarPorApellido());
