@@ -1,0 +1,41 @@
+form {
+	display: block;
+	width: 425px;
+	background-color: grey;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+}
+
+div.row {
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+div.cell {
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+input {
+	width: 97%;
+	padding: 5px;
+}
+
+input#user::placeholder {
+	text-align: right;
+}
+
+select {
+	width: 100%;
+	padding: 5px;
+}
+
+input#boton {
+	width: 100%;
+	padding: 5px;
+}
